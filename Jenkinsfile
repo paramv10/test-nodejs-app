@@ -1,7 +1,7 @@
 pipeline { 
   
-  agent (node 'Slave1')
-
+  agent any
+  
    stages {
    
      stage('Install Dependencies') { 
