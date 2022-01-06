@@ -1,6 +1,6 @@
 pipeline { 
   
-   agent any
+   agent ( node ('java'))
 
    stages {
    
@@ -19,7 +19,7 @@ pipeline {
          stage("Deploy nodejs application") { 
          steps { 
            sh 'echo "deploying application..."'
-           sh 'Successfully deploying Node JS Application..."'
+           sh ' echo "Successfully deploying Node JS Application..."'
          }
 
      }
